@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [София Болеста](https://up.htmlacademy.ru/adaptive/26/user/1585763).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatiengit).
 
 ---
 
