@@ -18,7 +18,8 @@
              width="86" height="35" alt="Магазин игрушек «Мишка»">-->
       </a>
       <nav class="main-nav navigation">
-        <a class="navigation__toggle button" href="#">
+        <a class="navigation__toggle" href="#">
+          <svg class="button__toggle" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H0v2h20V0ZM20 6H0v2h20V6ZM20 12H0v2h20v-2Z" fill="#231F20"/></svg>
           <span class="visually-hidden">Открыть меню</span>
         </a>
         <ul class="navigation__list site-list">
@@ -104,7 +105,7 @@
               </label>
             </fieldset>
             <fieldset class="product-form__fieldset">
-              <legend class="product-form__title">ФИО</legend>
+              <legend class="product-form__subject">ФИО</legend>
               <label class="product-form__title" for="product-form__name">Имя</label>
               <input class="product-form__input" type="text" name="name" id="product-form__name" placeholder="Введите ваше имя*">
               <label class="product-form__title" for="product-form__surname">Фамилия</label>
@@ -145,10 +146,14 @@
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Мы в Ютубе</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Мы в Телеграме</span>
+                </a>
               </li>
             </ul>
           </div>
