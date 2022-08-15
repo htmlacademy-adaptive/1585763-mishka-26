@@ -38,19 +38,6 @@
   font-size: 24px;
   margin: 73px 0 120px 0;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .header__list {
   padding: 0;
 }
@@ -123,16 +110,6 @@
   padding: 0;
   color: #444444;
 }
-.button {
-  padding: 16px 70px;
-  box-sizing: border-box;
-  border: 2px solid #444444;
-  text-decoration: none;
-  color: #444444;
-  font-weight: 600;
-  font-size: 18px;
-  background-color: #ffffff;
-}
 .advantages__title {
   font-size: 25px;
   font-weight: 600;
@@ -187,14 +164,6 @@
 .reviews__item--hidden {
   display: none;
 }
-.slider__toggle {
-  min-height: 52px;
-  background-color: #ffffff;
-  border: 1px solid #ececec;
-  padding: 13px 38px;
-  box-sizing: border-box;
-  margin: 0;
-}
 .contacts {
   margin: 0 0 39px 0;
 }
@@ -219,16 +188,6 @@
 .contacts__link {
   text-decoration: none;
   color: #444444;
-}
-.button {
-  padding: 16px 70px;
-  box-sizing: border-box;
-  border: 2px solid #444444;
-  text-decoration: none;
-  color: #444444;
-  font-weight: 600;
-  font-size: 18px;
-  background-color: #ffffff;
 }
 .contacts__button {
   margin: 0 0 39px 0;
@@ -336,6 +295,14 @@
   color: #444444;
   margin: 0 0 41px 0;
 }
+.slider__toggle {
+  min-height: 52px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  padding: 13px 38px;
+  box-sizing: border-box;
+  margin: 0;
+}
 .main-container {
   width: 280px;
   margin: 0 auto;
@@ -389,5 +356,28 @@
   font-size: 17px;
   line-height: 24px;
   background-color: #ffffff;
+}
+.button {
+  padding: 16px 70px;
+  box-sizing: border-box;
+  border: 2px solid #444444;
+  text-decoration: none;
+  color: #444444;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
