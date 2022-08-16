@@ -1,0 +1,35 @@
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+  color: @base-title-color;
+}
+
+.site-list__item--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
+  .site-list__link {
+    display: block;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .site-list__item--desktop {
+    display: block;
+  }
+}
