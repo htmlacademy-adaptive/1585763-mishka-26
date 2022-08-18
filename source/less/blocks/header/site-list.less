@@ -16,6 +16,7 @@
     grid-row: 2;
     grid-column: 1/-1;
   }
+
   .site-list__link {
     display: block;
     padding: 24px;
@@ -25,10 +26,11 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 202px);
+    grid-template-rows: repeat(auto-fit, minmax(88px, 88px));
   }
+
   .site-list__item--desktop {
     display: block;
   }

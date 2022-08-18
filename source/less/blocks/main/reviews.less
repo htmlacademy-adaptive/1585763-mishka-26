@@ -42,3 +42,103 @@
 .reviews__item--hidden {
   display: none;
 }
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: 786px;
+    padding: 0 50px 48px 50px;
+    box-sizing: border-box;
+    background-image: url("../img/main-container/reviews/review-tablet-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 153px;
+  }
+
+  .reviews__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 284px);
+    grid-template-rows: 80px 251px;
+    gap: 20px 100px;
+  }
+
+  .reviews__title {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+    align-self: flex-end;
+  }
+
+  .reviews__list {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+
+  .reviews__item {
+    margin: 0;
+  }
+
+  .reviews__author-name {
+    font-style: normal;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__toggles {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  .reviews__button {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 16px 26px;
+    text-align: center;
+    align-self: center;
+    justify-self: flex-end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: 1080px;
+    padding: 78px 50px 96px 175px;
+    box-sizing: border-box;
+    background-image: url("../img/main-container/reviews/review-tablet-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .reviews__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 377px);
+    grid-template-rows: 80px 251px;
+    gap: 35px 100px;
+  }
+
+  .reviews__title {
+    margin: 0;
+    font-size: 53px;
+    line-height: 57px;
+    align-self: flex-end;
+  }
+
+  .reviews__toggles {
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  .reviews__text {
+    width: 808px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-bottom: 44px;
+    margin: 0;
+  }
+}
