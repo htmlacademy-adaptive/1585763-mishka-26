@@ -74,9 +74,9 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Страница каталога магазина игрушек ручной работы «Мишка»</h1>
-      <section class="header">
-        <div class="header__container">
-          <h2 class="header__title">Каталог товаров</h2>
+      <section class="header-catalog">
+        <div class="header-catalog__container">
+          <h2 class="header-catalog__title">Каталог товаров</h2>
         </div>
       </section>
       <section class="catalog">
@@ -84,13 +84,13 @@
         <div class="catalog__wrapper">
           <ul class="catalog__list">
             <li class="catalog__item product">
+              <h3 class="product__title">Зайчик-попрыгайчик</h3>
               <a class="product__link" href="#">
-                <div class="product__wrapper">
-                  <h3 class="product__title">Зайчик-попрыгайчик</h3>
-                  <img class="product__picture" src="img/catalog/photo-mobile-jumping-bunny.jpg" width="260" height="195" alt="Фотография товара зайчика-попрыгайчика">
-                  <p class="product__parameters">Рост 30 см, вес 200 г</p>
-                </div>
+                <img class="product__picture-jumping-bunny product__picture-jumping-bunny-mobile--hidden" src="img/catalog/photo-mobile-jumping-bunny.jpg" width="260" height="195" alt="Фотография товара зайчика-попрыгайчика">
+                <img class="product__picture-jumping-bunny-tablet product__picture-jumping-bunny-tablet--hidden" src="img/catalog/photo-tablet-jumping-bunny.jpg" width="334" height="334" alt="Фотография товара зайчика-попрыгайчика">
+                <img class="product__picture-jumping-bunny-desktop product__picture-jumping-bunny-desktop-hidden" src="img/catalog/photo-desktop-jumping-bunny.jpg" width="316" height="462" alt="Фотография товара зайчика-попрыгайчика">
               </a>
+              <p class="product__parameters">Рост 30 см, вес 200 г</p>
               <div class="product__wrapper-prices">
                 <p class="product__prices">1 200 руб.</p>
                 <a class="product__button" href="#">
@@ -99,13 +99,13 @@
               </div>
             </li>
             <li class="catalog__item product">
+              <h3 class="product__title">Корзинка для белья</h3>
               <a class="product__link" href="#">
-                <div class="product__wrapper">
-                  <h3 class="product__title">Корзинка для белья</h3>
-                  <img class="product__picture" src="img/catalog/photo-mobile-basket-bad-sheets.png" width="260" height="195" alt="Фотография товара корзинки для белья">
-                  <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
-                </div>
+                <img class="product__picture-basket-bad-sheets-mobile product__picture-basket-bad-sheets-mobile--hidden" src="img/catalog/photo-mobile-basket-bad-sheets.png" width="260" height="195" alt="Фотография товара корзинки для белья">
+                <img class="product__picture-basket-bad-sheets-tablet product__picture-basket-bad-sheets-tablet--hidden" src="img/catalog/photo-tablet-basket-bad-sheets.jpg" width="334" height="334" alt="Фотография товара корзинки для белья">
+                <img class="product__picture-basket-bad-sheets-desktop product__picture-basket-bad-sheets-desktop--hidden" src="img/catalog/photo-desktop-basket-bad-sheets.jpg" width="316" height="462" alt="Фотография товара корзинки для белья">
               </a>
+              <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
               <div class="product__wrapper-prices">
                 <p class="product__prices">690 руб.</p>
                 <a class="product__button" href="#">
@@ -114,14 +114,14 @@
               </div>
             </li>
             <li class="catalog__item product">
+              <h3 class="product__title">Большая корзинка<br>
+                для игрушек</h3>
               <a class="product__link" href="#">
-                <div class="product__wrapper">
-                  <h3 class="product__title">Большая корзинка<br>
-                    для игрушек</h3>
-                  <img class="product__picture" src="img/catalog/photo-mobile-big-toy-basket.png" width="260" height="195" alt="Фотография товара большой корзинки для игрушек">
-                  <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
-                </div>
+                <img class="product__picture-big-toy-basket-mobile product__picture-big-toy-basket-mobile--hidden" src="img/catalog/photo-mobile-big-toy-basket.png" width="260" height="195" alt="Фотография товара большой корзинки для игрушек">
+                <img class="product__picture-big-toy-basket-tablet product__picture-big-toy-basket-tablet--hidden" src="img/catalog/photo-tablet-big-toy-basket.jpg" width="334" height="334" alt="Фотография товара большой корзинки для игрушек">
+                <img class="product__picture-big-toy-basket-desktop product__picture-big-toy-basket-desktop--hidden" src="img/catalog/photo-desktop-big-toy-basket.jpg" width="316" height="462" alt="Фотография товара большой корзинки для игрушек">
               </a>
+              <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
               <div class="product__wrapper-prices">
                 <p class="product__prices">1 500 руб.</p>
                 <a class="product__button" href="#">
@@ -138,14 +138,18 @@
             <h2 class="project-video__title">Процесс производства</h2>
             <img class="project-video__icon" src="img/catalog/video.svg" width="32" height="22" alt="Иконка камеры">
           </div>
-          <div class="project-video__content">
-            <img class="project-video__picture" src="img/catalog/video-mobile.png" width="260" height="150" alt="Видео о процессе производства корзинки">
-            <p class="project-video__description">По просьбам наших любимых<br>
-              фолловеров мы сняли для вас<br>
-              подробное видео о том, как<br>
-              появляются наши товары.</p>
-            <a class="project-video__button button" href="form.html">Сделать заказ</a>
-          </div>
+          <svg class="project-video__icon-play" width="101" height="77" aria-hidden="true" focusable="false" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M97 18.1s-.9-7-3.8-10.1c-3.6-4-7.7-4.1-9.5-4.3-13.3-1-33.3-1-33.3-1h-.1s-20 0-33.3 1c-1.9.2-5.9.3-9.5 4.3-2.8 3.1-3.8 10.1-3.8 10.1s-.9 8.2-.9 16.4v7.7c0 8.2.9 16.4.9 16.4s.9 7 3.8 10.1c3.6 4 8.4 3.9 10.5 4.3 7.6.8 32.4 1 32.4 1s20 0 33.3-1c1.9-.2 5.9-.3 9.5-4.3C96 65.6 97 58.6 97 58.6s.9-8.2.9-16.4v-7.7c0-8.2-.9-16.4-.9-16.4Z" fill="#63D1BB"/>
+            <path d="M50.3 76.8c-1 0-25-.3-32.6-1h-.2c-.3-.1-.7-.1-1.1-.2-2.5-.3-7.2-.9-10.8-5C2.2 67 1.2 59.8 1.1 59c0-.3-1-8.5-1-16.7v-7.7c0-8.3.9-16.4.9-16.7v-.1c.1-.8 1.2-7.9 4.5-11.6 4-4.4 8.5-4.9 10.7-5.1.2 0 .4 0 .5-.1h.1c13.3-1 33.3-1 33.5-1h.1c.2 0 20.2 0 33.5 1h.1c.2 0 .3 0 .5.1 2.2.2 6.7.7 10.7 5.1 3.4 3.6 4.4 10.8 4.5 11.6 0 .3 1 8.5 1 16.8v7.7c0 8.3-.9 16.4-1 16.7v.1c-.1.8-1.2 8-4.5 11.6-4 4.4-8.5 4.9-10.7 5.1-.2 0-.4 0-.5.1h-.1c-13.3.9-33.4.9-33.6.9Zm-31.9-6.4c7.5.7 31.2 1 32 1 .7 0 20.1 0 33-1 .2 0 .4 0 .6-.1 1.8-.2 4.6-.5 7.2-3.3 1.8-2 2.9-6.9 3.1-8.6.1-.5.9-8.4.9-16.1v-7.7c0-7.8-.9-15.6-1-16.1-.3-2.4-1.4-6.8-3.1-8.5-2.6-2.9-5.4-3.1-7.2-3.3-.2 0-.4 0-.6-.1-13.1-1-32.8-1-33-1h-.1c-.2 0-20 0-33 1-.2 0-.4 0-.6.1-1.8.2-4.6.5-7.2 3.3-1.8 2-2.9 6.9-3.1 8.6-.1.6-.9 8.4-.9 16.1v7.7c0 7.7.9 15.6.9 16.1.3 2.4 1.4 6.8 3.1 8.5 2.3 2.6 5.3 3 7.5 3.3.6-.1 1 0 1.5.1Z" fill="#fff"/><path d="M38.4 20.5v35.7l29.8-17.8-29.8-17.9Z" fill="#fff"/>
+          </svg>
+          <img class="project-video__picture-mobile project-video__picture-mobile--hidden" src="img/catalog/video-mobile.png" width="260" height="150" alt="Видео о процессе производства корзинки">
+          <img class="project-video__picture-tablet project-video__picture-tablet--hidden" src="img/catalog/video-tablet.jpg" width="668" height="455" alt="Видео о процессе производства корзинки">
+          <img class="project-video__picture-desktop project-video__picture-desktop--hidden" src="img/catalog/video-desktop.jpg" width="683" height="455" alt="Видео о процессе производства корзинки">
+          <p class="project-video__description">По просьбам наших любимых
+            фолловеров мы сняли для вас
+            подробное видео о том, как
+            появляются наши товары.</p>
+          <a class="project-video__button button" href="form.html">Сделать заказ</a>
         </div>
       </section>
     </main>

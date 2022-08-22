@@ -258,11 +258,70 @@
     margin: 0;
   }
 }
+.header-catalog {
+  display: flex;
+  width: 100%;
+  height: 177px;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+.header-catalog__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.header-catalog__title {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .header-catalog {
+    width: 100%;
+    height: 238px;
+    background-color: #f1f1f1;
+    margin-bottom: 54px;
+  }
+  .header-catalog__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .header-catalog__title {
+    font-size: 43px;
+    font-weight: 600;
+    line-height: 50px;
+    margin: 0;
+  }
+}
+@media (min-width: 1080px) {
+  .header-catalog {
+    width: 100%;
+    height: 255px;
+    background-color: #f1f1f1;
+  }
+  .header-catalog__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .header-catalog__title {
+    font-size: 53px;
+    font-weight: 600;
+    line-height: 57px;
+    margin: 0;
+  }
+}
 .header {
   background: url("../img/main-container/menu-header/hero-mobile.png") no-repeat center top;
   object-fit: contain;
   width: 280px;
-  margin-bottom: 31px;
+  margin: 0 auto;
 }
 .header__wrapper {
   height: 506px;
@@ -318,7 +377,7 @@
     object-fit: contain;
     width: 768px;
     min-height: 746px;
-    margin: 0 0 51px 0;
+    margin: 0 auto;
   }
   .header__wrapper {
     height: 746px;
@@ -361,7 +420,7 @@
     object-fit: contain;
     width: 1080px;
     min-height: 746px;
-    margin: 0 0 25px 0;
+    margin: 0 auto;
   }
   .header__slogan {
     width: 723px;
@@ -1078,6 +1137,22 @@
   list-style: none;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .catalog {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1080px) {
+  .catalog {
+    width: 1051px;
+    margin: 0 auto;
+  }
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .product__link {
   text-decoration: none;
   color: #000000;
@@ -1117,6 +1192,136 @@
   width: 20px;
   height: 19px;
 }
+.product__picture-jumping-bunny-mobile--hidden {
+  display: block;
+}
+.product__picture-jumping-bunny-tablet--hidden {
+  display: none;
+}
+.product__picture-jumping-bunny-desktop-hidden {
+  display: none;
+}
+.product__picture-basket-bad-sheets-mobile--hidden {
+  display: block;
+}
+.product__picture-basket-bad-sheets-tablet--hidden {
+  display: none;
+}
+.product__picture-basket-bad-sheets-desktop--hidden {
+  display: none;
+}
+.product__picture-big-toy-basket-mobile--hidden {
+  display: block;
+}
+.product__picture-big-toy-basket-tablet--hidden {
+  display: none;
+}
+.product__picture-big-toy-basket-desktop--hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .product {
+    display: grid;
+    grid-template-columns: 334px 300px;
+    grid-template-rows: 51px 51px 122px 74px;
+    gap: 12px 33px;
+    padding: 27px 0;
+    box-sizing: border-box;
+  }
+  .product__link {
+    grid-column: 1;
+    grid-row: 1/-1;
+  }
+  .product__title {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .product__parameters {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .product__picture-jumping-bunny-mobile--hidden {
+    display: none;
+  }
+  .product__picture-basket-bad-sheets-mobile--hidden {
+    display: none;
+  }
+  .product__picture-big-toy-basket-mobile--hidden {
+    display: none;
+  }
+  .product__picture-jumping-bunny-tablet--hidden {
+    display: block;
+  }
+  .product__picture-basket-bad-sheets-tablet--hidden {
+    display: block;
+  }
+  .product__picture-big-toy-basket-tablet--hidden {
+    display: block;
+  }
+  .product__wrapper-prices {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .product__prices {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1080px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .product__link {
+    order: 1;
+    margin: 0;
+  }
+  .product__title {
+    order: 2;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .product__parameters {
+    order: 3;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+  }
+  .product__picture-jumping-bunny-desktop-hidden {
+    display: block;
+  }
+  .product__picture-basket-bad-sheets-desktop--hidden {
+    display: block;
+  }
+  .product__picture-big-toy-basket-desktop--hidden {
+    display: block;
+  }
+  .product__picture-jumping-bunny-tablet--hidden {
+    display: none;
+  }
+  .product__picture-basket-bad-sheets-tablet--hidden {
+    display: none;
+  }
+  .product__picture-big-toy-basket-tablet--hidden {
+    display: none;
+  }
+  .product__wrapper-prices {
+    order: 4;
+    margin: 0;
+  }
+  .product__prices {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+  }
+}
 .project-video {
   margin: 0 0 58px 0;
 }
@@ -1141,6 +1346,138 @@
   color: #444444;
   margin: 0 0 41px 0;
 }
+.project-video__picture-mobile--hidden {
+  display: block;
+}
+.project-video__picture-tablet--hidden {
+  display: none;
+}
+.project-video__picture-desktop--hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .project-video {
+    width: 668px;
+    margin: 0 auto;
+    padding: 25px 0;
+    box-sizing: border-box;
+  }
+  .project-video__wrapper {
+    display: grid;
+    grid-template-columns: 668px;
+    grid-template-rows: 457px 47px 54px 122px;
+    gap: 22px 0;
+  }
+  .project-video__content-title {
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0 42px;
+    box-sizing: border-box;
+    align-self: center;
+    justify-self: flex-start;
+  }
+  .project-video__icon-play {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+  }
+  .project-video__icon {
+    padding-right: 33px;
+  }
+  .project-video__picture-tablet {
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0.4;
+  }
+  .project-video__description {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 0 42px;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .project-video__button {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 0 42px;
+    box-sizing: border-box;
+    align-self: center;
+    justify-self: stretch;
+    text-transform: uppercase;
+  }
+  .project-video__picture-mobile--hidden {
+    display: none;
+  }
+  .project-video__picture-tablet--hidden {
+    display: block;
+  }
+  .project-video__picture-desktop--hidden {
+    display: none;
+  }
+}
+@media (min-width: 1080px) {
+  .project-video {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 25px 0;
+    box-sizing: border-box;
+  }
+  .project-video__wrapper {
+    display: grid;
+    grid-template-columns: 683px 288px;
+    grid-template-rows: 145px 120px 136px;
+    gap: 27px 79px;
+  }
+  .project-video__content-title {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .project-video__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .project-video__icon-play {
+    grid-column: 1;
+    grid-row: 1/-1;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+  }
+  .project-video__picture-desktop {
+    grid-column: 1;
+    grid-row: 1/-1;
+  }
+  .project-video__description {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 0;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .project-video__button {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0;
+    align-self: flex-end;
+  }
+  .project-video__picture-mobile--hidden {
+    display: none;
+  }
+  .project-video__picture-tablet--hidden {
+    display: none;
+  }
+  .project-video__picture-desktop--hidden {
+    display: block;
+  }
+}
 .slider__toggle {
   min-height: 52px;
   background-color: #ffffff;
@@ -1150,18 +1487,18 @@
   margin: 0;
 }
 .main-container {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   .main-container {
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
 }
 @media (min-width: 1080px) {
   .main-container {
-    width: 1150px;
+    width: 100%;
     margin: 0 auto;
   }
 }
