@@ -2,3 +2,22 @@
   list-style: none;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    width: 1051px;
+    margin: 0 auto;
+  }
+
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
