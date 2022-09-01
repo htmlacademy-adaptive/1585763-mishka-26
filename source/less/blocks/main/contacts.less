@@ -1,5 +1,13 @@
 .contacts {
+  width: 100%;
   margin: 0 0 39px 0;
+}
+
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .contacts__title {
@@ -32,12 +40,8 @@
   color: @base-text-color;
 }
 
-.contacts__button {
-  margin: 42px 0 0 0;
-}
-
 .contacts__picture {
-  margin: 0 0 40px 0;
+  margin: 0 0 40px -30px;
 }
 
 .contacts__picture-mobile--hidden {
@@ -52,31 +56,43 @@
   display: none;
 }
 
+.contacts__button-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__button {
+  width: 260px;
+  text-transform: uppercase;
+  padding: 16px 37px;
+}
+
 @media (min-width: @tablet-width) {
   .contacts {
-    width: 668px;
-    margin: 0 auto;
-    padding: 25px 0;
+    width: 100%;
   }
 
   .contacts__wrapper {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(109px, 1fr));
-    width: 706px;
+    width: 768px;
+    margin: 0 auto;
+    padding: 25px 0;
   }
 
   .contacts__inner {
-    grid-row: 1;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+    grid-row: 1;
+    padding: 0 50px;
+    box-sizing: border-box;
   }
 
   .contacts__title {
     margin: 0;
     font-size: 43px;
     line-height: 50px;
+    width: 300px;
   }
 
   .contacts__icon--hidden {
@@ -85,6 +101,9 @@
 
   .contacts__list {
     display: flex;
+    grid-row: 2;
+    padding: 0 50px;
+    box-sizing: border-box;
     margin-bottom: 49px;
   }
 
@@ -119,18 +138,16 @@
   }
 
   .contacts__picture {
-    margin-bottom: 55px;
-  }
-
-  .contacts__picture-table {
-    width: 686px;
-    object-fit: cover;
+    grid-row: 3;
+    padding: 0;
+    margin: 0 0 55px 0;
   }
 
   .contacts__button-inner {
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-row: 4;
   }
 
   .contacts__button {
@@ -140,10 +157,7 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    width: 1080px;
-    margin: 0 auto;
-    padding: 25px 0;
-    box-sizing: border-box;
+    width: 100%;
   }
 
   .contacts__wrapper {
@@ -151,6 +165,10 @@
     grid-template-columns: 72px 344px 527px;
     grid-template-rows: 141px 150px 132px;
     gap: 35px 60px;
+    width: 1150px;
+    margin: 0 auto;
+    padding: 25px 0;
+    box-sizing: border-box;
   }
 
   .contacts__inner {
@@ -185,6 +203,7 @@
   .contacts__picture {
     grid-column: 3;
     grid-row: 1/-1;
+    margin: 0 auto;
   }
 
   .contacts__picture-mobile--hidden {

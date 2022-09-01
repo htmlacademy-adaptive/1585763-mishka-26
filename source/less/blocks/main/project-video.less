@@ -1,8 +1,22 @@
 .project-video {
+  width: 100%;
   margin: 0 0 58px 0;
 }
 
+.project-video__wrapper {
+  width: 320px;
+  display: grid;
+  grid-template-columns: 260px;
+  grid-template-rows: 48px 150px 96px 52px;
+  gap: 22px 0;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
 .project-video__content-title {
+  grid-row: 1;
+  grid-column: 1;
   display: flex;
   justify-content: space-between;
 }
@@ -15,16 +29,34 @@
   line-height: 24px;
 }
 
+.project-video__icon-play {
+  grid-row: 2;
+  grid-column: 1;
+  z-index: 1;
+  align-self: center;
+  justify-self: center;
+}
+
 .project-video__icon {
   order: 1;
+  grid-column: 1;
 }
 
 .project-video__description {
+  grid-row: 3;
+  grid-column: 1;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
+  padding: 0 31px;
+  box-sizing: border-box;
   color: @base-text-color;
   margin: 0 0 41px 0;
+}
+
+.project-video__picture-mobile {
+  grid-row: 2;
+  grid-column: 1;
 }
 
 .project-video__picture-mobile--hidden {
@@ -39,15 +71,28 @@
   display: none;
 }
 
+.project-video__button {
+  grid-row: 4;
+  grid-column: 1;
+  padding: 18px 11px;
+  box-sizing: content-box;
+  width: 192px;
+  height: 26px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
   .project-video {
-    width: 668px;
-    margin: 0 auto;
+    width: 100%;
     padding: 25px 0;
     box-sizing: border-box;
   }
 
   .project-video__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 668px;
     grid-template-rows: 457px 47px 54px 122px;
@@ -96,9 +141,7 @@
     grid-column: 1;
     grid-row: 4;
     margin: 0 42px;
-    box-sizing: border-box;
     align-self: center;
-    justify-self: stretch;
     text-transform: uppercase;
   }
 
@@ -117,13 +160,16 @@
 
 @media (min-width: @desktop-width) {
   .project-video {
-    width: 1050px;
-    margin: 0 auto;
+    width: 100%;
     padding: 25px 0;
     box-sizing: border-box;
   }
 
   .project-video__wrapper {
+    width: 1150px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 683px 288px;
     grid-template-rows: 145px 120px 136px;

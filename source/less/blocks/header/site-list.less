@@ -7,10 +7,6 @@
   color: @base-title-color;
 }
 
-.site-list__item--desktop {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
   .site-list {
     grid-row: 2;
@@ -26,14 +22,7 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    display: grid;
-    grid-template-columns: repeat(2, 231px);
-    grid-template-rows: 88px 88px;
-    align-items: flex-end;
-    height: 153px;
-  }
-
-  .site-list__item--desktop {
-    display: block;
+    grid-column: 1;
+    grid-row: 1;
   }
 }

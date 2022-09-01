@@ -25,15 +25,10 @@
   }
 
   .user-navigation__list {
-    display: grid;
-    grid-template-columns: 82px 1fr;
-    grid-template-rows: 88px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-items: center;
-  }
-
-  .user-navigation__item--search {
-    grid-column: 1/2;
+    margin: 0;
   }
 
   .user-navigation__prompt {
@@ -46,5 +41,30 @@
     grid-column: 3;
     grid-row: 1;
     order: 1;
+    padding: 0 50px 0 0;
+    box-sizing: border-box;
+  }
+
+  .user-navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .user-navigation__item--search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 83px;
+    height: 88px;
+  }
+
+  .user-navigation__item--basket {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 233px;
+    height: 88px;
   }
 }

@@ -1,30 +1,32 @@
 .header {
-  background: url("../img/main-container/menu-header/hero-mobile.png") no-repeat center top;
+  background: url("../img/main-container/menu-header/hero-mobile.png") no-repeat center -45px;
   object-fit: contain;
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
-}
-
-.header__wrapper {
-  height: 506px;
+  padding: 15px 0;
 }
 
 .header__holder {
-  padding: 73px 0 0 0;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .header__slogan {
-  width: 260px;
-  height: 90px;
+  width: 191px;
+  height: 100px;
+  margin: 0 auto 120px;
+  padding-top: 20px;
   text-align: center;
   font-weight: 600;
   font-size: 24px;
-  margin: 0 0 120px 0;
 }
 
 .header__list {
   padding: 0;
+  margin: 0;
 }
 
 .header__item {
@@ -42,6 +44,13 @@
   color: #ffffff;
   font-weight: 600;
   font-size: 19px;
+  width: 263px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.header__text {
+  width: 130px;
 }
 
 .header__item--current {
@@ -65,47 +74,52 @@
 
 @media (min-width: @tablet-width) {
   .header {
-    background: url("../img/main-container/menu-header/hero-tablet.png") no-repeat center top;
+    background: url("../img/main-container/menu-header/hero-tablet.png") no-repeat center -100px;
     object-fit: contain;
-    width: 768px;
-    min-height: 746px;
-    margin: 0 auto;
-  }
-
-  .header__wrapper {
-    height: 746px;
+    width: 100%;
   }
 
   .header__holder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 768px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    min-height: 534px;
+    margin: 0 auto;
   }
 
   .header__slogan {
-    padding: 73px 0 0 0;
     box-sizing: border-box;
+    margin-bottom: 392px;
+    padding-top: 40px;
     width: 530px;
     height: 110px;
     font-size: 43px;
     line-height: 50px;
-    margin: 0 0 444px 0;
   }
 
   .header__list {
     display: flex;
     flex-grow: 1;
-    padding: 0;
     margin: 0;
+    padding: 0 50px;
+    box-sizing: border-box;
+    justify-content: center;
   }
 
   .header__item {
-    width: 385px;
     height: 119px;
-    padding: 24px 36px 31px 30px;
+    padding: 25px 36px;
     box-sizing: border-box;
     background-color: @header-item-background;
     list-style: none;
+  }
+
+  .header__link {
+    width: 261px;
+    height: 66px;
   }
 
   .header__item--current {
@@ -115,17 +129,22 @@
 
 @media (min-width: @desktop-width) {
   .header {
-    background: url("../img/main-container/menu-header/hero-desktop.png") no-repeat center top;
+    background: url("../img/main-container/menu-header/hero-desktop.png") no-repeat center -100px;
     object-fit: contain;
-    width: 1080px;
-    min-height: 746px;
+    width: 100%;
+  }
+
+  .header__holder {
+    width: 1150px;
     margin: 0 auto;
+    min-height: 614px;
   }
 
   .header__slogan {
     width: 723px;
     font-size: 53px;
     line-height: 57px;
+    justify-content: center;
   }
 
   .header__item {
