@@ -92,34 +92,34 @@
             <fieldset class="product-form__fieldset">
               <legend class="product-form__subject">Тип</legend>
               <div class="product-form__container">
-                <label>
-                  <input class="product-form__input" type="radio" name="product__make" value="home-accessories">Аксессуар для интерьера<br>
+                <label class="product-form__label product-form__label--radio">
+                  <input class="product-form__input product-form__input--radio" type="radio" name="product__make" value="home-accessories">Аксессуар для интерьера<br>
                 </label>
-                <label>
-                  <input class="product-form__input" type="radio" name="product__make" value="children-toy">Детская игрушка<br>
+                <label class="product-form__label product-form__label--radio">
+                  <input class="product-form__input product-form__input--radio" type="radio" name="product__make" value="children-toy">Детская игрушка<br>
                 </label>
               </div>
             </fieldset>
             <fieldset class="product-form__fieldset">
-              <legend class="product-form__subject">Цвет</legend>
+                <legend class="product-form__subject">Цвет</legend>
               <div class="product-form__container">
-                <label>
-                  <input class="product-form__input" type="checkbox" name="white" checked>Белый
+                <label class="product-form__label">
+                  <input class="product-form__input product-form__input--checkbox" type="checkbox" name="white" checked>Белый
                 </label>
-                <label>
-                  <input class="product-form__input" type="checkbox" name="gray" checked>Серый
+                <label class="product-form__label">
+                  <input class="product-form__input product-form__input--checkbox" type="checkbox" name="gray" checked>Серый
                 </label>
-                <label>
-                  <input class="product-form__input" type="checkbox" name="tiffany">Тиффани
+                <label  class="product-form__label">
+                  <input class="product-form__input product-form__input--checkbox" type="checkbox" name="tiffany">Тиффани
                 </label>
-                <label>
-                  <input class="product-form__input" type="checkbox" name="black">Черный
+                <label  class="product-form__label">
+                  <input class="product-form__input product-form__input--checkbox" type="checkbox" name="black">Черный
                 </label>
-                <label>
-                  <input class="product-form__input" type="checkbox" name="pink">Розовый
+                <label  class="product-form__label">
+                  <input class="product-form__input product-form__input--checkbox" type="checkbox" name="pink">Розовый
                 </label>
-                <label>
-                  <input class="product-form__input" type="checkbox" name="orange">Оранжевый
+                <label  class="product-form__label">
+                  <input class="product-form__input product-form__input--checkbox" type="checkbox" name="orange">Оранжевый
                 </label>
               </div>
             </fieldset>
@@ -127,18 +127,18 @@
               <legend class="product-form__subject">ФИО</legend>
               <div class="product-form__container">
                 <label class="product-form__title" for="product-form__name">Имя</label>
-                <input class="product-form__input" type="text" name="name" id="product-form__name" placeholder="Введите ваше имя*">
+                <input class="product-form__text" type="text" name="name" id="product-form__name" placeholder="Введите ваше имя*">
                 <label class="product-form__title" for="product-form__surname">Фамилия</label>
-                <input class="product-form__input" type="text" name="surname" id="product-form__surname" placeholder="Укажите фамилию*">
+                <input class="product-form__text" type="text" name="surname" id="product-form__surname" placeholder="Укажите фамилию*">
                 <label class="product-form__title" for="product-form__patronymic">Отчество</label>
-                <input class="product-form__input" type="text" name="patronymic" id="product-form__patronymic" placeholder="Отчество, если желаете">
+                <input class="product-form__text" type="text" name="patronymic" id="product-form__patronymic" placeholder="Отчество, если желаете">
               </div>
             </fieldset>
             <fieldset class="product-form__fieldset">
               <legend class="product-form__subject">Тел</legend>
               <div class="product-form__container">
                 <label>
-                  <input class="product-form__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                  <input class="product-form__text product-form__text--tel" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                 </label>
               </div>
             </fieldset>
@@ -146,7 +146,7 @@
               <legend class="product-form__subject">E-mail</legend>
               <div class="product-form__container">
                 <label>
-                  <input class="product-form__input" type="email" name="mail" placeholder="Ваш Email*">
+                  <input class="product-form__text product-form__text--mail" type="email" name="mail" placeholder="Ваш Email*">
                 </label>
               </div>
             </fieldset>
