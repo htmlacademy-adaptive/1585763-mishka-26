@@ -298,6 +298,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0 0 98px 0;
     background-color: #f1f1f1;
   }
   .header-form__container {
@@ -1380,29 +1381,43 @@
     line-height: 30px;
     margin: 0 0 36px 0;
   }
-  .product-form__fieldset {
+  .product-form__item {
     width: 668px;
     display: grid;
     grid-template-columns: 58px 510px;
     gap: 0 100px;
+    margin-bottom: 50px;
     border: none;
+  }
+  .product-form__fieldset {
+    display: contents;
   }
   .product-form__subject {
     grid-column: 1;
     grid-row: 1;
     font-size: 17px;
     line-height: 16px;
+    padding: 0;
+    margin: 18px 0 0 0;
     text-transform: uppercase;
   }
   .product-form__container {
     grid-column: 2/-1;
     grid-row: 1;
   }
+  .product-form__container--color {
+    display: grid;
+    grid-template-columns: repeat(2, 218px);
+    gap: 0 44px;
+  }
   .product-form__footer-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+  }
+  .product-form__text {
+    background-color: transparent;
   }
   .product-form__prompt {
     font-size: 17px;
@@ -1430,12 +1445,28 @@
     font-weight: 400;
     line-height: 30px;
   }
+  .product-form__item {
+    display: grid;
+    grid-template-columns: 98px 875px;
+    gap: 0 77px;
+    margin-bottom: 49px;
+    border: none;
+  }
+  .product-form__subject {
+    justify-self: flex-end;
+    margin: 18px 0 0 0;
+  }
+  .product-form__container--color {
+    display: grid;
+    grid-template-columns: repeat(2, 204px) 349px;
+    gap: 0 59px;
+  }
   .product-form__footer-form {
+    width: 875px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 700px;
-    margin: 0 0 50px 376px;
+    margin-left: 175px;
   }
   .product-form__prompt {
     order: 2;
@@ -1892,6 +1923,8 @@
 .main-footer__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 .main-footer__logo--hidden {
   display: none;
@@ -1910,6 +1943,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
     width: 786px;
   }
   .main-footer__logo--hidden {
@@ -1936,6 +1971,8 @@
     align-items: center;
     margin: 0 auto;
     width: 1150px;
+    padding: 0 50px;
+    box-sizing: border-box;
   }
   .main-footer__logo--hidden {
     display: block;
