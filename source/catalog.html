@@ -18,12 +18,12 @@
         <!--<img src="img/main-main-main/mishka-logo-mobile.svg"
             width="86" height="35" alt="Магазин игрушек «Мишка»">-->
       </a>
-      <nav class="main-nav navigation">
-        <a class="navigation__toggle" href="#">
-          <svg class="button__toggle" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H0v2h20V0ZM20 6H0v2h20V6ZM20 12H0v2h20v-2Z" fill="#231F20"/></svg>
-          <span class="visually-hidden">Открыть меню</span>
-        </a>
-        <ul class="navigation__list site-list">
+      <a class="main-header__toggle" href="#">
+        <span class="visually-hidden">Открыть меню</span>
+      </a>
+      <!-- Чтобы закрыть меню надо поменять класс на navigation--closed -->
+      <nav class="main-nav navigation navigation--opened">
+        <ul class="navigation__list site__list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--ident-not" href="catalog.html">Каталог товаров</a>
           </li>
@@ -43,7 +43,8 @@
         </ul>
       </nav>
       <span class="main-header__prompt">Бесплатная доставка по России</span>
-      <nav class="user-navigation">
+      <!-- Чтобы закрыть меню надо поменять класс на user-navigation--closed -->
+      <nav class="user-navigation user-navigation--opened">
         <ul class="user-navigation__list">
           <li class="user-navigation__item user-navigation__item--search">
             <a class="user-navigation__link" href="#">
@@ -60,7 +61,7 @@
           </li>
           <li class="user-navigation__item user-navigation__item--basket">
             <a class="user-navigation__link" href="#">
-              <svg class="user-navigation__item-icon" aria-hidden="true" focusable="false" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user-navigation__item-icon user-navigation__item-icon--basket" aria-hidden="true" focusable="false" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".2" d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14
                       5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4
                       0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0

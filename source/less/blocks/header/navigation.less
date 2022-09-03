@@ -1,7 +1,11 @@
-.navigation__list {
+.navigation {
   display: none;
-  list-style: none;
-  padding: 0;
+}
+
+.navigation--opened {
+  grid-column: 1/-1;
+  grid-row: 2;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -12,23 +16,20 @@
     grid-row: 2;
   }
 
-  .navigation__toggle {
-    display: none;
-  }
-
   .navigation__list {
-    display: flex;
     margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .navigation__toggle {
-    display: none;
-  }
-
   .navigation {
     grid-column: 1;
     grid-row: 1;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
   }
 }
