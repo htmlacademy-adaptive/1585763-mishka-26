@@ -1,3 +1,35 @@
-.navigation__list {
+.navigation {
   display: none;
+}
+
+.navigation--opened {
+  grid-column: 1/-1;
+  grid-row: 2;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .navigation__list {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
 }

@@ -44,3 +44,166 @@
   width: 20px;
   height: 19px;
 }
+
+.product__picture-jumping-bunny-mobile--hidden {
+  display: block;
+}
+
+.product__picture-jumping-bunny-tablet--hidden {
+  display: none;
+}
+
+.product__picture-jumping-bunny-desktop-hidden {
+  display: none;
+}
+
+.product__picture-basket-bad-sheets-mobile--hidden {
+  display: block;
+}
+
+.product__picture-basket-bad-sheets-tablet--hidden {
+  display: none;
+}
+
+.product__picture-basket-bad-sheets-desktop--hidden {
+  display: none;
+}
+
+.product__picture-big-toy-basket-mobile--hidden {
+  display: block;
+}
+
+.product__picture-big-toy-basket-tablet--hidden {
+  display: none;
+}
+
+.product__picture-big-toy-basket-desktop--hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    display: grid;
+    grid-template-columns: 334px 300px;
+    grid-template-rows: 51px 51px 122px 74px;
+    gap: 12px 33px;
+    padding: 27px 0;
+    box-sizing: border-box;
+  }
+
+  .product__link {
+    grid-column: 1;
+    grid-row: 1/-1;
+  }
+
+  .product__title {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product__parameters {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .product__picture-jumping-bunny-mobile--hidden {
+    display: none;
+  }
+
+  .product__picture-basket-bad-sheets-mobile--hidden {
+    display: none;
+  }
+
+  .product__picture-big-toy-basket-mobile--hidden {
+    display: none;
+  }
+
+  .product__picture-jumping-bunny-tablet--hidden {
+    display: block;
+  }
+
+  .product__picture-basket-bad-sheets-tablet--hidden {
+    display: block;
+  }
+
+  .product__picture-big-toy-basket-tablet--hidden {
+    display: block;
+  }
+
+  .product__wrapper-prices {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .product__prices {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .product__link {
+    order: 1;
+    margin: 0;
+  }
+
+  .product__title {
+    order: 2;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .product__parameters {
+    order: 3;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .product__picture-jumping-bunny-desktop-hidden {
+    display: block;
+  }
+
+  .product__picture-basket-bad-sheets-desktop--hidden {
+    display: block;
+  }
+
+  .product__picture-big-toy-basket-desktop--hidden {
+    display: block;
+  }
+
+  .product__picture-jumping-bunny-tablet--hidden {
+    display: none;
+  }
+
+  .product__picture-basket-bad-sheets-tablet--hidden {
+    display: none;
+  }
+
+  .product__picture-big-toy-basket-tablet--hidden {
+    display: none;
+  }
+
+  .product__wrapper-prices {
+    order: 4;
+    margin: 0;
+  }
+
+  .product__prices {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+  }
+}

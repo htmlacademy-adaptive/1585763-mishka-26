@@ -1,3 +1,14 @@
+.product-form {
+  width: 100%;
+}
+
+.product-form__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
 .product-form__description {
   font-size: 13px;
   font-weight: 400;
@@ -7,14 +18,21 @@
 }
 
 .product-form__fieldset {
-  border: none;
-  margin: 0 0 31px 0;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid @header-item-background;
+  padding: 0;
+  margin: 0 0 20px 0;
 }
 
 .product-form__subject {
   font-size: 16px;
   font-weight: 600;
   line-height: 17px;
+  padding: 0 25px 0 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
   color: @header-item-background;
 }
 
@@ -25,14 +43,214 @@
   color: @base-title-color;
 }
 
+.product-form__input {
+  margin: 0;
+  padding: 0;
+}
+
+.product-form__label {
+  display: flex;
+  align-items: center;
+  margin: 0 0 11px 0;
+}
+
+.product-form__input--radio {
+  margin: 0 19px 0 0;
+  width: 42px;
+  height: 42px;
+}
+
+.product-form__input--checkbox {
+  margin-right: 23px;
+  width: 38px;
+  height: 38px;
+  align-self: center;
+}
+
+.product-form__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-form__text {
+  padding: 17px 0;
+  margin-bottom: 21px;
+  box-sizing: border-box;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  border-bottom: 2px solid @base-title-color;
+}
+
+.product-form__text--tel {
+  background-image: url("../img/form/phone.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.product-form__text--mail {
+  background-image: url("../img/form/mail.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
 .product-form__textarea {
-  border: 2px solid @base-text-color;
+  min-height: 142px;
+  border: 2px solid @base-title-color;
+  color: @base-text-color;
+  font-family: @base-font;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 17px 17px 0 17px;
 }
 
 .product-form__prompt {
+  margin-bottom: 30px;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   color: @base-text-color;
-  margin: 0;
+}
+
+.product-form__footer-form {
+  margin-bottom: 55px;
+}
+
+.product-form__button {
+  width: 260px;
+  padding: 18px 37px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .product-form {
+    width: 100%;
+  }
+
+  .product-form__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .product-form__description {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 0 36px 0;
+  }
+
+  .product-form__item {
+    width: 668px;
+    display: grid;
+    grid-template-columns: 58px 510px;
+    gap: 0 100px;
+    margin-bottom: 50px;
+    border: none;
+  }
+
+  .product-form__fieldset {
+    display: contents;
+  }
+
+  .product-form__subject {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 17px;
+    line-height: 16px;
+    padding: 0;
+    margin: 18px 0 0 0;
+    text-transform: uppercase;
+  }
+
+  .product-form__container {
+    grid-column: 2/-1;
+    grid-row: 1;
+  }
+
+  .product-form__container--color {
+    display: grid;
+    grid-template-columns: repeat(2, 218px);
+    gap: 0 44px;
+  }
+
+  .product-form__footer-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .product-form__text {
+    background-color: transparent;
+  }
+
+  .product-form__prompt {
+    font-size: 17px;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .product-form__button {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-form {
+    width: 100%;
+  }
+
+  .product-form__wrapper {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .product-form__description {
+    width: 702px;
+    margin: 0 auto 62px auto;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .product-form__item {
+    display: grid;
+    grid-template-columns: 98px 875px;
+    gap: 0 77px;
+    margin-bottom: 49px;
+    border: none;
+  }
+
+  .product-form__subject {
+    justify-self: flex-end;
+    margin: 18px 0 0 0;
+  }
+
+  .product-form__container--color {
+    display: grid;
+    grid-template-columns: repeat(2, 204px) 349px;
+    gap: 0 59px;
+  }
+
+  .product-form__footer-form {
+    width: 875px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 175px;
+  }
+
+  .product-form__prompt {
+    order: 2;
+  }
+
+  .product-form__button {
+    order: 1;
+  }
 }

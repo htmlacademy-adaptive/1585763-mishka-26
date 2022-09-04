@@ -1,0 +1,129 @@
+.user-navigation {
+  display: none;
+}
+
+.user-navigation--opened {
+  grid-column: 1/-1;
+  grid-row: 3;
+  display: block;
+}
+
+.user-navigation__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-navigation__link {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 27.5px 0  27.5px 46px;
+  box-sizing: border-box;
+  color: @base-title-color;
+}
+
+.user-navigation__item-icon {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.user-navigation__prompt {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .user-navigation {
+    grid-column: 2;
+    grid-row: 1;
+    order: 1;
+  }
+
+  .user-navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
+
+  .user-navigation__link {
+    padding: 0;
+    min-width: 88px;
+  }
+
+  .user-navigation__prompt {
+    display: none;
+  }
+
+  .user-navigation__item--search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 83px;
+    height: 88px;
+  }
+
+  .user-navigation__item-icon {
+    top: -10px;
+    left: -70px;
+  }
+
+  .user-navigation__item-icon--basket {
+    top: 2px;
+    left: -47px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-navigation {
+    grid-column: 3;
+    grid-row: 1;
+    order: 1;
+    padding: 0 50px 0 0;
+    box-sizing: border-box;
+  }
+
+  .user-navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .user-navigation__link {
+    min-height: 80px;
+  }
+
+  .user-navigation__item--search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 83px;
+    height: 88px;
+  }
+
+  .user-navigation__item--basket {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    width: 233px;
+  }
+
+  .user-navigation__item-icon {
+    top: 30px;
+    left: 36px;
+  }
+
+  .user-navigation__item-icon--basket {
+    top: 30px;
+    left: -47px;
+  }
+}
