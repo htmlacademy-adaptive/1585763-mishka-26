@@ -5,6 +5,8 @@
 .advantages__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .advantages__title {
@@ -20,12 +22,41 @@
 }
 
 .advantages__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   margin-bottom: 30px;
+  min-height: 94px;
+}
+
+.advantages__item--position-one {
+  background: url("../img/main-container/advantages/icon-eco-material.svg") no-repeat top left;
+}
+
+.advantages__item--position-two {
+  background: url("../img/main-container/advantages/scandinavian-style.svg") no-repeat top left;
+}
+
+.advantages__item--position-three {
+  background: url("../img/main-container/advantages/heart.svg") no-repeat top left;
+}
+
+.advantages__item--position-four {
+  background: url("../img/main-container/advantages/yarn.svg") no-repeat top left;
+}
+
+.advantages__item--position-five {
+  background: url("../img/main-container/advantages/rocket.svg") no-repeat top left;
+}
+
+.advantages__item--position-six {
+  background: url("../img/main-container/advantages/gift-wrap.svg") no-repeat top left;
 }
 
 .advantages__description {
   font-size: 17px;
   font-weight: 600;
+  margin: 0;
   color: @base-title-color;
   line-height: 20px;
 }
@@ -107,12 +138,12 @@
   }
 
   .advantages__wrapper {
-    width: 1050px;
+    width: 1150px;
     display: grid;
     grid-template-columns: 292px 340px;
     grid-template-rows: 50px;
     gap: 41px 36px;
-    padding: 25px 0;
+    padding: 25px 50px;
     margin: 0 auto;
     justify-content: center;
   }

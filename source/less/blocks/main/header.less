@@ -14,7 +14,6 @@
 .header__holder {
   display: flex;
   flex-direction: column;
-  width: 380px;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -35,8 +34,6 @@
 }
 
 .header__item {
-  padding: 24px 36px 31px 30px;
-  box-sizing: border-box;
   background-color: @header-item-background;
   list-style: none;
 }
@@ -49,9 +46,8 @@
   color: #ffffff;
   font-weight: 600;
   font-size: 19px;
-  width: 263px;
-  height: 90px;
-  margin: 0 auto;
+  padding: 24px 36px 31px 30px;
+  box-sizing: border-box;
 }
 
 .header__text {
@@ -111,29 +107,40 @@
   }
 
   .header__list {
+    position: relative;
+    width: 100%;
     display: flex;
-    flex-grow: 1;
     margin: 0;
     padding: 0 50px;
     box-sizing: border-box;
-    justify-content: center;
   }
 
   .header__item {
-    height: 119px;
-    padding: 25px 36px;
-    box-sizing: border-box;
+    width: 100%;
     background-color: @header-item-background;
     list-style: none;
   }
 
   .header__link {
-    width: 261px;
-    height: 66px;
+    padding: 26px 36px 35px 34px;
+  }
+
+  .header__text {
+    width: 131px;
   }
 
   .header__item--current {
     background-color: @header-item-background-current;
+  }
+
+  .header__pattern {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 24px;
+    background-position: left bottom;
+    background-image: url("../img/pattern-tablet.png");
+    background-repeat: repeat;
   }
 }
 
@@ -141,6 +148,7 @@
   .header {
     background: url("../img/main-container/menu-header/hero-desktop.png") no-repeat center -100px;
     width: 100%;
+    padding-bottom: 26px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-container/menu-header/hero-desktop@2x.jpg");
@@ -162,11 +170,25 @@
     justify-content: center;
   }
 
+  .header__list {
+    position: relative;
+  }
+
   .header__item {
-    width: 540px;
+    width: 100%;
   }
 
   .header__text {
     width: 138px;
+  }
+
+  .header__pattern {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 34px;
+    background-position: left bottom;
+    background-image: url("../img/pattern-desktop.png");
+    background-repeat: repeat;
   }
 }
