@@ -1644,7 +1644,7 @@
   line-height: 24px;
 }
 .product__button {
-  background: url("../img/main-header/cart.svg") no-repeat center;
+  background: url("../img/icons/cart.svg") no-repeat center;
   width: 20px;
   height: 19px;
 }
@@ -2092,13 +2092,13 @@
   height: 22px;
 }
 .social__link--vkontakte {
-  background: url("../img/main-footer/vkontakte.svg") no-repeat center;
+  background: url("../img/icons/vkontakte.svg") no-repeat center;
 }
 .social__link--youtube {
-  background: url("../img/main-footer/youtube.svg") no-repeat center;
+  background: url("../img/icons/youtube.svg") no-repeat center;
 }
 .social__link--telegram {
-  background: url("../img/main-footer/telegram.svg") no-repeat center;
+  background: url("../img/icons/telegram.svg") no-repeat center;
 }
 @media (min-width: 768px) {
   .social__list {
