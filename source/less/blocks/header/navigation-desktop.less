@@ -2,7 +2,26 @@
   display: none;
 }
 
+.navigation-desktop__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
+  .navigation-desktop {
+    z-index: 2;
+  }
+
   .navigation-desktop--hidden {
     display: none;
   }
@@ -10,6 +29,7 @@
 
 @media (min-width: @desktop-width) {
   .navigation-desktop {
+    z-index: 2;
     grid-column: 1;
     grid-row: 2;
   }
@@ -30,7 +50,7 @@
     font-size: 15px;
     font-weight: 600;
     line-height: 24px;
-    padding: 24px;
+    padding: 32px;
     box-sizing: border-box;
     text-decoration: none;
     color: @base-title-color;

@@ -56,16 +56,45 @@
 }
 
 .product-form__input--radio {
+  position: relative;
+  display: block;
   margin: 0 19px 0 0;
   width: 42px;
   height: 42px;
+  color: #000000;
 }
 
-.product-form__input--checkbox {
-  margin-right: 23px;
-  width: 38px;
-  height: 38px;
-  align-self: center;
+.product-form__label--radio .product-form__control-mark {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+}
+
+.product-form__label:hover .product-form__control-mark {
+  border-color: #62d1ba;
+}
+
+.product-form__label:active .product-form__control-mark {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.product-form__label:disabled .product-form__control-mark {
+  border-color: #444444;
+  opacity: 0.3;
+}
+
+.product-form__input--radio[type="radio"]:checked + .product-form__control-mark::before,
+.product-form__input--radio[type="radio"]:checked + .product-form__control-mark::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 18px;
+  height: 18px;
+  background-color: #62d1ba;
+  border-radius: 50%;
 }
 
 .product-form__container {
@@ -73,21 +102,58 @@
   flex-direction: column;
 }
 
+.product-form__label--checkbox {
+  position: relative;
+  margin-left: 63px;
+  margin-bottom: 39px;
+}
+
+.product-form__label--checkbox .product-form__control-mark {
+  position: absolute;
+  left: -63px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+}
+
+.product-form__input--checkbox[type="checkbox"]:checked + .product-form__control-mark::before,
+.product-form__input--radio[type="checkbox"]:checked + .product-form__control-mark::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 32px;
+  height: 24px;
+  background-image: url("../img/form/tick.svg");
+  background-repeat: no-repeat;
+}
+
 .product-form__text {
   padding: 17px 60px 17px 0;
   margin-bottom: 21px;
   box-sizing: border-box;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  border: none;
   width: 100%;
-  border-bottom: 2px solid @base-title-color;
+  box-shadow: inset 0px -2px 0px #000000;
+}
+
+.product-form__text:hover  {
+  box-shadow: inset 0px -2px 0px #62d1ba;
+  border: none;
+  outline: none;
+}
+
+.product-form__text:active,
+.product-form__text:focus {
+  box-shadow: inset 0px -2px 0px #62d1ba;
+  border: none;
+  outline: none;
 }
 
 .product-form__icon {
   position: absolute;
   top: 16px;
-  right: 22px;
+  right: 0;
 }
 
 .product-form__textarea {
@@ -98,7 +164,17 @@
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
-  padding: 17px 17px 0 17px;
+}
+
+.product-form__textarea:hover  {
+  border: 2px solid #62d1ba;
+  border-radius: 0;
+}
+
+.product-form__textarea:active,
+.product-form__textarea:focus {
+  border: 2px solid #62d1ba;
+  border-radius: 0;
 }
 
 .product-form__prompt {
@@ -121,7 +197,10 @@
 
 @media (min-width: @tablet-width) {
   .product-form {
+    position: relative;
+    z-index: 1;
     width: 100%;
+    margin: -37px 0 0 0;
   }
 
   .product-form__wrapper {
@@ -135,7 +214,7 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
-    margin: 0 0 36px 0;
+    margin: 0 0 63px 0;
   }
 
   .product-form__item {
@@ -145,6 +224,24 @@
     gap: 0 100px;
     margin-bottom: 50px;
     border: none;
+  }
+
+  .product-form__back-color {
+    position: absolute;
+    z-index: -1;
+    top: 236px;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 241px;
+  }
+
+  .product-form__back-color-two {
+    position: absolute;
+    z-index: -1;
+    background-color: #f1f1f1;
+    width: 100%;
+    top: 759px;
+    height: 230px;
   }
 
   .product-form__fieldset {
@@ -195,6 +292,12 @@
     background-color: transparent;
   }
 
+  .product-form__icon {
+    position: absolute;
+    top: 16px;
+    right: 22px;
+  }
+
   .product-form__prompt {
     font-size: 17px;
     line-height: 30px;
@@ -208,6 +311,8 @@
 
 @media (min-width: @desktop-width) {
   .product-form {
+    position: relative;
+    z-index: 1;
     width: 100%;
   }
 
@@ -232,6 +337,15 @@
     gap: 0 77px;
     margin-bottom: 49px;
     border: none;
+  }
+
+  .product-form__back-color {
+    top: 239px;
+    height: 164px;
+  }
+
+  .product-form__back-color-two {
+    top: 691px;
   }
 
   .product-form__subject {
