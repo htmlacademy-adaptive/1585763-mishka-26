@@ -28,7 +28,7 @@
         </a>
         <!-- Чтобы открыть меню надо поменять класс на navigation--opened -->
         <nav class="main-nav navigation navigation--closed">
-          <ul class="navigation__list site__list">
+          <ul class="navigation__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--ident-not" href="catalog.html">Каталог товаров</a>
             </li>
@@ -78,7 +78,7 @@
           <h2 class="visually-hidden">Меню магазина игрушек ручной работы «Мишка»</h2>
           <p class="header__slogan">
             Милые штуки
-            ручной
+            ручной <span class="header__slogan-mobile"><br></span>
             работы для дома
           </p>
         </header>
@@ -86,7 +86,7 @@
           <li class="header__item">
             <a class="header__link" href="catalog.html">
               <span class="header__text">Предметы интерьера</span>
-              <svg class="header__item-icon" aria-hidden="true" focusable="false" width="40" height="62" viewBox="0 0 40 62" xmlns="http://www.w3.org/2000/svg">
+              <svg class="header__item-icon header__item-icon--interior" aria-hidden="true" focusable="false" width="40" height="62" viewBox="0 0 40 62" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#interior"></use>
               </svg>
             </a>
@@ -94,7 +94,7 @@
           <li class="header__item header__item--current">
             <a class="header__link" href="catalog.html">
               <span class="header__text">Детские игрушки</span>
-              <svg class="header__item-icon" aria-hidden="true" focusable="false" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="header__item-icon header__item-icon--toy" aria-hidden="true" focusable="false" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#toy"></use>
               </svg>
             </a>
@@ -105,9 +105,9 @@
       <section class="best-product">
         <div class="best-product__wrapper">
           <p class="best-product__promo-title">Товар недели</p>
-          <p class="best-product__subject">Вязанные корзинки</p>
-          <p class="best-product__description">Экологически чистая пряжа,<br>
-            ручная работа. Доступны в шести<br>
+          <p class="best-product__subject">Вязаные корзинки</p>
+          <p class="best-product__description">Экологически чистая пряжа,
+            ручная работа. Доступны в шести
             расцветках и трёх размерах.</p>
           <dl class="best-product__list">
             <div class="best-product__item">
@@ -147,6 +147,7 @@
             <a class="best-product__button button" href="#">Заказать</a>
           </div>
         </div>
+        <span class="best-product__zigzag"></span>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -251,7 +252,7 @@
           <div class="contacts__picture">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/main-container/contacts/map-desktop.jpg 1x, img/main-container/contacts/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 786px)" srcset="img/main-container/contacts/map-tablet.jpg 1x, img/main-container/contacts/map-tablet@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-container/contacts/map-tablet.jpg 1x, img/main-container/contacts/map-tablet@2x.jpg 2x">
               <img class="contacts__image" src="img/main-container/contacts/map-mobile.jpg" alt="г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101" srcset="img/main-container/contacts/map-mobile@2x.jpg 2x">
             </picture>
           </div>

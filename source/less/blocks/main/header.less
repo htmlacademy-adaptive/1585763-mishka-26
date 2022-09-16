@@ -1,5 +1,5 @@
 .header {
-  background: url("../img/main-container/menu-header/hero-mobile.png") no-repeat center -45px;
+  background: url("../img/main-container/menu-header/hero-mobile.png") no-repeat center -19px;
   object-fit: contain;
   width: 100%;
   margin: 0 auto;
@@ -8,6 +8,7 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main-container/menu-header/hero-mobile@2x.jpg");
     background-size: 320px auto;
+    background-position: center -19px;
   }
 }
 
@@ -19,13 +20,14 @@
 }
 
 .header__slogan {
-  width: 191px;
+  width: 254px;
   height: 100px;
-  margin: 0 auto 120px;
-  padding-top: 20px;
+  margin: 0 auto 110px;
+  padding-top: 56px;
   text-align: center;
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
 }
 
 .header__list {
@@ -39,6 +41,7 @@
 }
 
 .header__link {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +49,7 @@
   color: #ffffff;
   font-weight: 600;
   font-size: 19px;
-  padding: 25px 36px 32px 39px;
+  padding: 27px 35px 25px 32px;
   box-sizing: border-box;
 
   &:hover {
@@ -71,6 +74,18 @@
 .header__item-icon {
   fill: #149080;
   opacity: 0.5;
+}
+
+.header__item-icon--interior {
+  position: absolute;
+  top: 22px;
+  right: 35px;
+}
+
+.header__item-icon--toy {
+  position: absolute;
+  top: 26px;
+  right: 25px;
 }
 
 .header__text {
@@ -98,13 +113,13 @@
 
 @media (min-width: @tablet-width) {
   .header {
-    background: url("../img/main-container/menu-header/hero-tablet.png") no-repeat center -100px;
+    background: url("../img/main-container/menu-header/hero-tablet.png") no-repeat center -92px;
     width: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-container/menu-header/hero-tablet@2x.jpg");
       background-size: 768px auto;
-      background-position: center -100px;
+      background-position: center -92px;
     }
   }
 
@@ -121,19 +136,22 @@
 
   .header__slogan {
     box-sizing: border-box;
-    margin-bottom: 392px;
-    padding-top: 40px;
+    margin: 0 0 0 10px;
+    padding-top: 50px;
     width: 530px;
-    height: 110px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .header__slogan-mobile {
+    display: none;
   }
 
   .header__list {
     position: relative;
     width: 100%;
     display: flex;
-    margin: 0;
+    margin: -14px 0 0 0;
     padding: 0 50px;
     box-sizing: border-box;
   }
@@ -146,11 +164,24 @@
   }
 
   .header__link {
-    padding: 25px 36px 32px 39px;
+    padding: 27px 36px 32px 42px;
     box-sizing: border-box;
   }
 
+  .header__item-icon--interior {
+    top: 31px;
+    right: 31px;
+  }
+
+  .header__item-icon--toy {
+    top: 32px;
+    right: 29px;
+  }
+
   .header__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
     width: 131px;
   }
 
@@ -171,13 +202,13 @@
 
 @media (min-width: @desktop-width) {
   .header {
-    background: url("../img/main-container/menu-header/hero-desktop.png") no-repeat center -100px;
+    background: url("../img/main-container/menu-header/hero-desktop.png") no-repeat center -91px;
     width: 100%;
     padding-bottom: 26px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-container/menu-header/hero-desktop@2x.jpg");
-      background-position: 50% -100px;
+      background-position: center -91px;
       background-size: cover;
     }
   }
@@ -193,15 +224,20 @@
     font-size: 53px;
     line-height: 57px;
     justify-content: center;
+    margin-left: 34px;
   }
 
   .header__list {
     position: relative;
+    margin: -94px 0 0 18px;
   }
 
   .header__item {
     width: 100%;
-    height: 119px;
+  }
+
+  .header__link {
+    padding: 24px 36px 32px 36px;
   }
 
   .header__text {
@@ -209,12 +245,16 @@
   }
 
   .header__pattern {
-    position: absolute;
-    top: 100px;
-    width: 93%;
-    height: 34px;
-    background-position: left bottom;
+    background-position: 34px 0;
     background-image: url("../img/pattern-desktop.png");
     background-repeat: repeat;
+  }
+
+  .header__item-icon--interior {
+    right: 38px;
+  }
+
+  .header__item-icon--toy {
+    right: 35px;
   }
 }
