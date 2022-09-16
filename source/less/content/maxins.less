@@ -13,10 +13,22 @@
 
 .button() {
   border: 2px solid #444444;
+  box-sizing: border-box;
   text-decoration: none;
   color: @base-text-color;
   text-align: center;
   font-weight: 600;
-  font-size: 18px;
   background-color: @base-background;
+
+  &:hover {
+    color: #ffffff;
+    background: #444444;
+    border: 2px solid #444444;
+  }
+
+  &:active {
+    color: fade(#ffffff, 30%);
+    background: #444444;
+    border: 2px solid #444444;
+  }
 }

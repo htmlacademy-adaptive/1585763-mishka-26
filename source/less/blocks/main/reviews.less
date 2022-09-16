@@ -1,6 +1,6 @@
 .reviews {
   width: 100%;
-  padding: 0 0 89px 0;
+  padding: 0 0 68px 0;
 }
 
 .reviews__wrapper {
@@ -14,6 +14,7 @@
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
+  margin-top: 58px;
   color: @base-title-color;
 }
 
@@ -32,6 +33,7 @@
 }
 
 .reviews__author-name {
+  font-style: normal;
   order: 2;
   font-size: 17px;
   font-weight: 600;
@@ -45,6 +47,7 @@
   font-weight: 400;
   line-height: 20px;
   color: @base-text-color;
+  margin: 5px 0 18px 0;
 }
 
 .reviews__text {
@@ -52,6 +55,9 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
+  margin-top: -6px;
+  margin-bottom: 29px;
+  width: 252px;
   color: @base-text-color;
 }
 
@@ -65,7 +71,7 @@
 }
 
 .reviews__button {
-  padding: 16px 66px;
+  padding: 12px 66px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -84,16 +90,16 @@
     display: grid;
     grid-template-columns: 350px 210px;
     grid-template-rows: repeat(3, 133px);
-    gap: 31px 126px;
+    gap: 41px 126px;
     padding: 25px 50px;
     box-sizing: border-box;
     background-image: url("../img/main-container/reviews/review-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: 5px 27px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-container/reviews/review-tablet@2x.jpg");
-      background-position: left;
+      background-position: 5px 27px;
       background-size: 350px auto;
     }
   }
@@ -103,36 +109,37 @@
     grid-row: 1;
     margin: 0;
     font-size: 43px;
-    padding: 0 0 0 50px;
-    box-sizing: border-box;
     line-height: 50px;
+    padding-left: 5px;
     align-self: flex-end;
   }
 
   .reviews__list {
     grid-column: 1/-1;
     grid-row: 2;
-    padding: 0 0 0 50px;
-    box-sizing: border-box;
+    padding-left: 5px;
   }
 
   .reviews__item {
     margin: 0;
-    padding: 0 50px 0 0;
-    box-sizing: border-box;
   }
 
   .reviews__author-name {
     font-style: normal;
-    padding: 0 50px 0 0;
-    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .reviews__author-social {
+    margin-top: 8px;
   }
 
   .reviews__text {
     font-size: 17px;
     line-height: 30px;
     width: 668px;
-    margin: 0;
+    margin: 0 0 60px 0;
     padding: 0;
   }
 
@@ -142,17 +149,16 @@
     display: flex;
     align-self: flex-start;
     justify-self: flex-end;
-    margin: 0;
-    box-sizing: border-box;
+    margin-top: 10px;
   }
 
   .reviews__button {
     grid-column: 2;
     grid-row: 1;
-    width: 175px;
+    width: 174px;
     text-align: center;
     align-self: center;
-    justify-self: flex-end;
+    margin: 80px 0 0 23px;
   }
 }
 
@@ -172,11 +178,11 @@
     box-sizing: border-box;
     background-image: url("../img/main-container/reviews/review-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: 67px 26px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-container/reviews/review-desktop@2x.jpg");
-      background-position: left;
+      background-position: 67px 26px;
       background-size: 350px auto;
     }
   }
@@ -187,30 +193,33 @@
     margin: 0;
     font-size: 53px;
     line-height: 57px;
-    align-self: flex-end;
-    padding: 0 0 0 175px;
-    box-sizing: border-box;
+    padding: 15px 0 0 191px;
   }
 
   .reviews__list {
-    padding: 0 0 0 175px;
-    box-sizing: border-box;
+    padding: 15px 0 0 191px;
+  }
+
+  .reviews__author-name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .reviews__toggles {
     grid-column: 2;
     grid-row: 3;
-    align-self: flex-start;
-    justify-self: flex-end;
+    margin: -6px -31px 0 1px;
   }
 
   .reviews__button {
     grid-column: 2;
     grid-row: 1;
-    padding: 16px 26px;
+    padding: 12px 26px;
     text-align: center;
     align-self: flex-end;
     justify-self: flex-end;
+    margin: 0 -17px 0 0;
   }
 
   .reviews__text {
