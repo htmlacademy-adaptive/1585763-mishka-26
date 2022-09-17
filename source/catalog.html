@@ -22,12 +22,12 @@
             <img src="img/main-header/mishka-logo-mobile.svg" alt="Магазин игрушек «Мишка»">
           </picture>
         </a>
-        <!-- Чтобы открыть меню надо поменять класс на main-header--closed -->
-        <a class="main-header__toggle main-header--opened" href="#">
+        <!-- Чтобы открыть меню надо поменять класс на main-header__toggle--closed -->
+        <a class="main-header__toggle main-header__toggle--opened" href="#">
           <span class="visually-hidden">Открыть меню</span>
         </a>
         <!-- Чтобы открыть меню надо поменять класс на navigation--opened -->
-        <nav class="main-nav navigation navigation--closed">
+        <nav class="main-nav navigation navigation--opened">
           <ul class="navigation__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--ident-not" href="catalog.html">Каталог товаров</a>
@@ -49,7 +49,7 @@
         </nav>
         <span class="main-header__prompt">Бесплатная доставка по России</span>
         <!-- Чтобы открыть меню надо поменять класс на user-navigation--opened -->
-        <nav class="user-navigation user-navigation--closed">
+        <nav class="user-navigation user-navigation--opened">
           <ul class="user-navigation__list">
             <li class="user-navigation__item user-navigation__item--search">
               <a class="user-navigation__link" href="#">
@@ -86,6 +86,9 @@
             <li class="catalog__item product">
               <a class="product__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/photo-desktop-jumping-bunny.webp 1x, img/catalog/photo-desktop-jumping-bunny@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-tablet-jumping-bunny.webp 1x, img/catalog/photo-tablet-jumping-bunny@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/photo-mobile-jumping-bunny.webp 1x, img/catalog/photo-mobile-jumping-bunny@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/catalog/photo-desktop-jumping-bunny.jpg 1x, img/catalog/photo-desktop-jumping-bunny@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/photo-tablet-jumping-bunny.jpg 1x, img/catalog/photo-tablet-jumping-bunny@2x.jpg 2x">
                   <img class="product__picture" src="img/catalog/photo-mobile-jumping-bunny.jpg" srcset="img/catalog/photo-mobile-jumping-bunny@2x.jpg 2x" alt="Фотография товара зайчика-попрыгайчика">
@@ -112,6 +115,9 @@
             <li class="catalog__item product">
               <a class="product__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/photo-desktop-basket-bad-sheets.webp 1x, img/catalog/photo-desktop-basket-bad-sheets@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-tablet-basket-bad-sheets.webp 1x, img/catalog/photo-tablet-basket-bad-sheets@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/photo-mobile-basket-bad-sheets.webp 1x, img/catalog/photo-mobile-basket-bad-sheets@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/catalog/photo-desktop-basket-bad-sheets.jpg 1x, img/catalog/photo-desktop-basket-bad-sheets@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/photo-tablet-basket-bad-sheets.jpg 1x, img/catalog/photo-tablet-basket-bad-sheets@2x.jpg 2x">
                   <img class="product__picture-basket-bad-sheets" src="img/catalog/photo-mobile-basket-bad-sheets.jpg" srcset="img/catalog/photo-mobile-basket-bad-sheets@2x.jpg 2x" alt="Фотография товара корзинки для белья">
@@ -138,6 +144,9 @@
             <li class="catalog__item product">
               <a class="product__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/photo-desktop-big-toy-basket.webp 1x, img/catalog/photo-desktop-big-toy-basket@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-tablet-big-toy-basket.webp 1x, img/catalog/photo-tablet-big-toy-basket@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/photo-mobile-big-toy-basket.webp 1x, img/catalog/photo-mobile-big-toy-basket@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/catalog/photo-desktop-big-toy-basket.jpg 1x, img/catalog/photo-desktop-big-toy-basket@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/photo-tablet-big-toy-basket.jpg 1x, img/catalog/photo-tablet-big-toy-basket@2x.jpg 2x">
                   <img class="product__picture-big-toy-basket" src="img/catalog/photo-mobile-big-toy-basket.jpg" srcset="img/catalog/photo-mobile-big-toy-basket@2x.jpg 2x" alt="Фотография товара корзинки для белья">
@@ -180,6 +189,9 @@
               </button>
               <div class="project-video__picture">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/video-desktop.webp 1x, img/catalog/video-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/video-tablet.webp 1x, img/catalog/video-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/video-mobile.webp 1x, img/catalog/video-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
                   <img src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Видео о процессе производства корзинки">

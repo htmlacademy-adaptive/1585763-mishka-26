@@ -85,7 +85,7 @@
 }
 
 .product-form__label:active .product-form__control-mark {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid #62d1ba;
 }
 
 .product-form__label:disabled .product-form__control-mark {
@@ -97,8 +97,8 @@
 .product-form__input--radio[type="radio"]:checked + .product-form__control-mark::after {
   content: "";
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 9px;
+  right: 10px;
   width: 18px;
   height: 18px;
   background-color: #62d1ba;
@@ -333,8 +333,15 @@
   }
 
   .product-form__input--checkbox[type="checkbox"]:checked + .product-form__control-mark::before,
-  .product-form__input--radio[type="checkbox"]:checked + .product-form__control-mark::after {
+  .product-form__input--checkbox[type="checkbox"]:checked + .product-form__control-mark::after {
+    content: "";
+    position: absolute;
+    top: 11px;
     right: 8px;
+    width: 32px;
+    height: 24px;
+    background-image: url("../img/form/tick.svg");
+    background-repeat: no-repeat;
     background-size: 35px 25px;
   }
 
