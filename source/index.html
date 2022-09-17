@@ -9,6 +9,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -22,12 +24,12 @@
             <img src="img/main-header/mishka-logo-mobile.svg" alt="Магазин игрушек «Мишка»">
           </picture>
         </a>
-        <!-- Чтобы открыть меню надо поменять класс на main-header--closed -->
-        <a class="main-header__toggle main-header--opened" href="#">
+        <!-- Чтобы открыть меню надо поменять класс на main-header__toggle--closed -->
+        <a class="main-header__toggle main-header__toggle--opened" href="#">
           <span class="visually-hidden">Открыть меню</span>
         </a>
         <!-- Чтобы открыть меню надо поменять класс на navigation--opened -->
-        <nav class="main-nav navigation navigation--closed">
+        <nav class="main-nav navigation navigation--opened">
           <ul class="navigation__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--ident-not" href="catalog.html">Каталог товаров</a>
@@ -49,7 +51,7 @@
         </nav>
         <span class="main-header__prompt">Бесплатная доставка по России</span>
         <!-- Чтобы открыть меню надо поменять класс на user-navigation--opened -->
-        <nav class="user-navigation user-navigation--closed">
+        <nav class="user-navigation user-navigation--opened">
           <ul class="user-navigation__list">
             <li class="user-navigation__item user-navigation__item--search">
               <a class="user-navigation__link" href="#">
@@ -99,7 +101,7 @@
               </svg>
             </a>
           </li>
-          <div class="header__pattern"></div>
+          <li class="header__pattern"></li>
         </ul>
       </section>
       <section class="best-product">
@@ -137,6 +139,9 @@
           </dl>
           <div class="best-product__images">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/main-container/best-product/card-product-basket-desktop.webp 1x, img/main-container/best-product/card-product-basket-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-container/best-product/card-product-basket-tablet.webp 1x, img/main-container/best-product/card-product-basket-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-container/best-product/card-product-basket-mobile.webp 1x, img/main-container/best-product/card-product-basket-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/main-container/best-product/card-product-basket-desktop.jpg 1x, img/main-container/best-product/card-product-basket-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main-container/best-product/card-product-basket-tablet.jpg 1x, img/main-container/best-product/card-product-basket-tablet@2x.jpg 2x">
               <img src="img/main-container/best-product/card-product-basket-mobile.jpg" srcset="img/main-container/best-product/card-product-basket-mobile@2x.jpg 2x" alt="Товар недели корзинка ручной работы">
@@ -157,21 +162,21 @@
               <p class="advantages__description">Экологически<br>
                 чистые материалы</p>
             </li>
-            <li class="advantages__item advantages__item--position-two">
-              <p class="advantages__description">Скандинавский стиль<br>
-                по российской цене</p>
-            </li>
-            <li class="advantages__item advantages__item--position-three">
-              <p class="advantages__description">Увеличивает лайки<br>
-                на фотографиях</p>
-            </li>
             <li class="advantages__item advantages__item--position-four">
               <p class="advantages__description">Связано вручную<br>
                 с любовью и умилением</p>
             </li>
+            <li class="advantages__item advantages__item--position-two">
+              <p class="advantages__description">Скандинавский стиль<br>
+                по российской цене</p>
+            </li>
             <li class="advantages__item advantages__item--position-five">
               <p class="advantages__description">Поддержка отечественного<br>
                 производителя</p>
+            </li>
+            <li class="advantages__item advantages__item--position-three">
+              <p class="advantages__description">Увеличивает лайки<br>
+                на фотографиях</p>
             </li>
             <li class="advantages__item advantages__item--position-six">
               <p class="advantages__description">Поставляется<br>
@@ -251,6 +256,9 @@
           </dl>
           <div class="contacts__picture">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/main-container/contacts/map-desktop.webp 1x, img/main-container/contacts/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-container/contacts/map-tablet.webp 1x, img/main-container/contacts/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-container/contacts/map-mobile.webp 1x, img/main-container/contacts/map-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/main-container/contacts/map-desktop.jpg 1x, img/main-container/contacts/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main-container/contacts/map-tablet.jpg 1x, img/main-container/contacts/map-tablet@2x.jpg 2x">
               <img class="contacts__image" src="img/main-container/contacts/map-mobile.jpg" alt="г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101" srcset="img/main-container/contacts/map-mobile@2x.jpg 2x">

@@ -8,14 +8,14 @@ mainHeaderToggle.addEventListener("click", function () {
     nav.classList.add("navigation--opened");
     navUser.classList.remove("user-navigation--closed");
     navUser.classList.add("user-navigation--opened");
-    mainHeaderToggle.classList.remove("main-header--closed");
-    mainHeaderToggle.classList.add("main-header--opened");
+    mainHeaderToggle.classList.remove("main-header__toggle--closed");
+    mainHeaderToggle.classList.add("main-header__toggle--opened");
   } else {
     nav.classList.add("navigation--closed");
     nav.classList.remove("navigation--opened");
     navUser.classList.add("user-navigation--closed");
     navUser.classList.remove("user-navigation--opened");
-    mainHeaderToggle.classList.add("main-header--closed");
-    mainHeaderToggle.classList.remove("main-header--opened");
+    mainHeaderToggle.classList.add("main-header__toggle--closed");
+    mainHeaderToggle.classList.remove("main-header__toggle--opened");
   }
 });

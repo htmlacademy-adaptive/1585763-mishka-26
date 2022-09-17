@@ -52,39 +52,24 @@
   height: 20px;
   cursor: pointer;
   border: none;
-  background-image: url("../img/main-header/menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.main-header--closed .main-header__toggle::before {
+.main-header__toggle--closed {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 27px;
+  right: 28px;
   background-image: url("../img/main-header/menu.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.main-header--closed .main-header__toggle {
+.main-header__toggle--opened {
   top: 32px;
-  right: 31px;
-  left: 0;
+  left: 272px;
   background-image: url("../img/main-header/menu-close.svg");
   background-repeat: no-repeat;
   background-position: center;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 28px;
-    background-image: url("../img/main-header/menu-close.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
 @media (min-width: @tablet-width) {
