@@ -62,6 +62,11 @@
   width: 42px;
   height: 42px;
   color: #000000;
+
+  &:focus + .product-form__control-mark {
+    border-color: #444444;
+    opacity: 0.3;
+  }
 }
 
 .product-form__label--radio .product-form__control-mark {
@@ -145,6 +150,13 @@
   background-image: url("../img/form/tick.svg");
   background-repeat: no-repeat;
   background-size: 26px 16px;
+}
+
+.product-form__input--checkbox {
+  &:focus + .product-form__control-mark {
+    border-color: #444444;
+    opacity: 0.3;
+  }
 }
 
 .product-form__text-checkbox {
